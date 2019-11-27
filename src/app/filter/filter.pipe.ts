@@ -10,9 +10,6 @@ export class FilterPipe implements PipeTransform {
 
   transform( todos: Todo[], filtro: formFiltro.filtrosValidos ): Todo[] {
 
-    console.log(todos);
-    console.log(filtro);
-
     switch ( filtro ) {
       
       case 'completados':
@@ -25,10 +22,5 @@ export class FilterPipe implements PipeTransform {
         return todos;
 
     }
-
-
-
-    return todos;
   }
-
 }
